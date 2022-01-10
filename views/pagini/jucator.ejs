@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta name="description" content="Clubul campionilor" />
+    <meta name="keywords" content="rugby,grivita,campioana" />
+    <%- include("../fragmente/head") %>
+
+    <title>RC Grivita</title>
+
+</head>
+<body>
+
+<%- include("../fragmente/header") %> 
+<main>
+    <h2>Echipa</h2>
+    <%  var juc=locals.jucator  %>
+    <article class='produs'>
+        <img src='/imagini/echipa/<%- juc.poza %>' style='width:20%;height:auto;'>
+        <p class='nume'><%- juc.nume %></p>
+        <p class='descriere'><%- juc.descriere %></p>
+        <p class='inaltime'><%- juc.inaltime %></p>
+        <p class='pozitie'><%- juc.pozitie %></p>
+    </article>
+</main>
+<%- include("../fragmente/footer") %>
+</body>
+</html>

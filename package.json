@@ -1,0 +1,25 @@
+{
+  "name": "proiect-tw",
+  "version": "1.0.0",
+  "description": "Pagina web a echipei de rugby Grivita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rugby",
+    "echipa",
+    "grivita"
+  ],
+  "author": "Andrei Radu-Glavan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "heroku": "^7.54.1",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
+    "sharp": "^0.28.3"
+  }
+}

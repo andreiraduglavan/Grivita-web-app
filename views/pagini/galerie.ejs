@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta name="description" content="Clubul campionilor" />
+    <meta name="keywords" content="rugby,grivita,campioana" />
+    <%- include("../fragmente/head") %>
+    <link rel="stylesheet" href="/css/galerie.css" />
+    <link rel="stylesheet" href="/css/galerie-1200.css" type="text/css" media="screen and (max-width:1200px)"/>
+    <link rel="stylesheet" href="/css/galerie-500.css" type="text/css" media="screen and (max-width:525px)"/>
+
+    <title>RC Grivita</title>
+
+</head>
+<body>
+
+<%- include("../fragmente/header") %> 
+<main>
+    <h2>Galerie</h2>
+    <section id="galerie-statica">
+        <% for(let imag of locals.imagini){ %>
+            <% if(imag.anotimp==locals.anotimpCurent) { %>
+                <% imag.mare=imag.mare.replace('resurse', '') %>
+                <% imag.mic=imag.mic.replace('resurse', '') %>
+                <% imag.medie=imag.medie.replace('resurse', '') %>
+                <picture style="text-align: center;">
+                    <source media="(max-width:525px)" srcset="<%- imag.mic %>">
+                    <source media="(max-width:1200px)" srcset="<%- imag.medie %>">
+                    <img src="<%- imag.mare %>" alt="imagine" width="100%" height="100%">
+                    <figcaption><%- imag.descriere %></figcaption>
+                </picture>
+                <% } %>
+        <% } %>      
+    </section>
+</main>
+
+<%- include("../fragmente/footer") %>
+</body>
+</html>

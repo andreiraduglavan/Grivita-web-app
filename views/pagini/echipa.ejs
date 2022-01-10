@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta name="description" content="Clubul campionilor" />
+    <meta name="keywords" content="rugby,grivita,campioana" />
+    <%- include("../fragmente/head") %>
+    <link rel="stylesheet" href="/css/echipa.css" />
+
+    <title>RC Grivita</title>
+    <script type="text/javascript" src='/js/echipa.js'></script>
+
+</head>
+<body>
+
+<%- include("../fragmente/header") %> 
+<main>
+    <input type='text' id='echipa-dorita'>
+    <div>
+        <label>Romania
+            <input type='radio' id='rad1' name='rad' checked value='Romania'>
+        </label>
+        <label>Anglia
+            <input type='radio' id='rad2' name='rad' value='Anglia'>
+        </label>
+        <label>Franta
+            <input type='radio' id='rad3' name='rad' value='Franta'>
+        </label>
+        <label>Africa de Sud
+            <input type='radio' id='rad4' name='rad' value='Africa de Sud'>
+        </label>
+    </div>
+    <div>
+        <label>linia 1
+            <input type='checkbox' id='ck1' name='ck' checked value='linia 1'>
+        </label>
+        <label>linia 2
+            <input type='checkbox' id='ck2' name='ck' checked value='linia 2'>
+        </label>
+        <label>linia 3
+            <input type='checkbox' id='ck3' name='ck' checked value='linia 3'>
+        </label>
+        <label>demi
+            <input type='checkbox' id='ck4' name='ck' checked value='demi'>
+        </label>
+        <label>uvertura
+            <input type='checkbox' id='ck4' name='ck' checked value='uvertura'>
+        </label>
+        <label>centru
+            <input type='checkbox' id='ck4' name='ck' checked value='centru'>
+        </label>
+        <label>aripa
+            <input type='checkbox' id='ck4' name='ck' checked value='aripa'>
+        </label>
+        <label>fundas
+            <input type='checkbox' id='ck4' name='ck' checked value='fundas'>
+        </label>
+    </div>
+    <button id='filtreaza'>Filtreaza</button>
+    <button id='sorteaza-crescator'>Sorteaza crescator</button>
+    <button id='sorteaza-descrescator'>Sorteaza descrescator</button>
+    <button id='calcul'>Calculeaza media inaltimii</button>
+    <button id='reset'>Reseteaza</button>
+    <div id='mydiv'></div>
+    <section id='jucatori'>
+    <h2>Echipa</h2>
+        <div class='grid-jucatori'>
+            <% for(let prod of locals.echipa) { %>
+                <article class='jucator'>
+                    <figure>
+                        <img src='/imagini/echipa/<%- prod.poza %>' style='width:20%;height:auto;'>
+                    </figure>
+                    <h3 class='nume'><a href='/echipa/<%- prod.id%>' style='text-decoration-style: none;'><span class='val-nume'><%- prod.nume %></span></a></h3>
+                    <div class='info-jucator'>
+                        <p class='inaltime'><span class='val-inaltime'><%- prod.inaltime %></span></p>
+                        <p class='tara'><span class='val-tara'><%- prod.tara %></span></p>
+                        <%var foste= prod.foste_echipe==null ? 'Fara alte echipe' : prod.foste_echipe%>
+                        <p class='foste_echipe'><span class='val-foste_echipe'><%- foste %></span></p>
+                        <p class='pozitie'><span class='val-pozitie'><%- prod.pozitie %></span></p>
+                        <%var statut=prod.statut_js ? ' DA' : ' NU'%>
+                        <p class='statut_JS'>Junior:<span class='val-statut_JS'><%- statut %></span></p>
+                    </div>
+                </article>
+            <%}%>
+        </div>
+    </section>
+</main>
+
+<%- include("../fragmente/footer") %>
+</body>
+</html>
