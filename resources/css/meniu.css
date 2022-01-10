@@ -1,0 +1,110 @@
+.titlu {
+    display: inline-flex;
+}
+ul ul{
+    display:none;
+    position:absolute;
+}
+
+nav{
+    position: sticky; /*nu merge*/
+    top: 0; 
+    background: #eee;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #333;
+    height: 3rem;
+  }
+
+ul>li {   
+    float: left;
+    width: 100px;
+    position: relative;
+}
+
+ul li{
+    text-align:center;
+    list-style-type: none;
+    background: #333;
+    cursor:pointer;
+}
+
+ul li a, ul li div {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover::before{   
+    content: " ";
+    opacity:1;
+    bottom: 0px;
+}
+ul li a::before{
+    display: block;
+    width: 100%;
+    left: 0px;
+    height: 0.2rem;
+    background:linear-gradient(black ,white , black);
+    opacity: 0;
+    content:" ";
+    position: absolute;
+    bottom: 100%;
+    transition: all 0.7s linear;
+}
+
+
+ul li:hover ul {
+    display: block;
+    animation-name: aparitie_meniu;
+    animation-iteration-count:1;
+    animation-duration:0.7s;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+}
+
+@keyframes aparitie_meniu{
+    0%{
+        height:0%;
+        width:0%;
+    } 
+	100%{
+    	height:100%;
+        width:100%;
+    }
+}
+
+ul li ul li a::before{
+    display: none;
+}
+
+ul li ul li a:hover{
+    animation: animatie 1 0.7s forwards linear;
+}
+
+@keyframes animatie {
+    from {
+        background-color: #333;
+    }
+    to{
+        background-color: #111;
+    }
+}
+
+#hamburger{
+    display: none;
+}
+#ch-menu{
+    display: none ;
+}
+#hamburger img{
+    height:100%;
+    width:auto;
+  }

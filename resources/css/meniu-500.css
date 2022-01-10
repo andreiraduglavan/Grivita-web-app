@@ -1,0 +1,32 @@
+#hamburger{
+    display:block;
+    width:25px;
+    height: 25px;
+}
+
+ul{
+    display:none;
+}
+#ch-menu:checked+ul {
+    display: block;
+}
+
+
+nav ul li{
+    width:100%;
+}
+nav ul>li ul{
+    position:absolute;
+    width:100%;
+    z-index:20;
+}
+nav ul>li li a:before{
+    content:" \25B7\00A0	";
+    color:white;
+
+}
+
+#img1, #img2{
+    width:95%;
+    height:95%;
+}

@@ -1,0 +1,77 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"galati1.jpg",
+            "titlu":"galati1",
+			"descriere":"Antonescu",
+            "anotimp":"iarna"
+		},
+		{
+			"fisier":"galati2.jpg",
+            "titlu":"galati2",
+			"descriere":"Cotoc",
+            "anotimp":"iarna"
+		},
+        {
+			"fisier":"galati3.jpg",
+            "titlu":"galati3",
+			"descriere":"Ailincai",
+            "anotimp":"iarna"
+		},
+        {
+			"fisier":"galati4.jpg",
+            "titlu":"galati4",
+			"descriere":"Oprisor",
+            "anotimp":"primavara"
+		},
+        {
+			"fisier":"galati5.jpg",
+            "titlu":"galati5",
+			"descriere":"Oancea",
+            "anotimp":"primavara"
+		},
+        {
+			"fisier":"galati6.jpg",
+            "titlu":"galati6",
+			"descriere":"Mare placaj",
+            "anotimp":"primavara"
+		},
+        {
+			"fisier":"galati7.jpg",
+            "titlu":"galati7",
+			"descriere":"repunere margine",
+            "anotimp":"vara"
+		},
+        {
+			"fisier":"galati8.jpg",
+            "titlu":"galati8",
+			"descriere":"bines domnule",
+            "anotimp":"vara"
+		},
+        {
+			"fisier":"galati9.jpg",
+            "titlu":"galati9",
+			"descriere":"Sprint",
+            "anotimp":"vara"
+		},
+        {
+			"fisier":"galati10.jpg",
+            "titlu":"galati10",
+			"descriere":"Anton",
+            "anotimp":"toamna"
+		},
+        {
+			"fisier":"galati11.jpg",
+            "titlu":"galati11",
+			"descriere":"Robin",
+            "anotimp":"toamna"
+		},
+		{
+			"fisier":"galati12.jpg",
+            "titlu":"galati12",
+			"descriere":"Seicariu Andreas",
+            "anotimp":"toamna"
+		}
+	]
+}

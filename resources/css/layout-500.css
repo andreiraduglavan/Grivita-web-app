@@ -1,0 +1,27 @@
+html{
+    font-size:13px;
+}
+body{
+    --body-padding:0px;
+}
+.titlu{
+    display:block;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.box{
+    display:block;
+    margin-bottom: 1empx;
+}
+.boxa{
+    display:block;
+    margin-bottom: 1em;
+}
+.wra{
+    display:block;
+    margin-bottom: 1em;
+}
+.tabel{
+    overflow-y: scroll;
+}

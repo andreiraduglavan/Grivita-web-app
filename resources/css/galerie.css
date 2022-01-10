@@ -1,0 +1,14 @@
+#galerie-statica {
+    display: grid;
+    grid-template-areas: "box1 box1 box2"
+                         "box3 box4 box4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+#galerie-statica> picture{
+    background: var(--gri-deschis);
+    padding:1em;
+}
+#galerie-statica>picture:nth-child(odd){
+    background:var(--gri-inchis);
+}

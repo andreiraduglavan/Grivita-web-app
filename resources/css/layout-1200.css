@@ -1,0 +1,50 @@
+html{
+    font-size: 14px;
+}
+
+.boxa{
+    display: grid;
+    grid-template-areas: "zona1 zona2"
+                         "zona3 zona4";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+.boxa> div{
+    background:#eee;
+    padding:1em;
+}
+.boxa>div:nth-child(odd){
+    background:#ddd;
+}
+.boxa .tabel:first-child{
+    background: white;
+}
+.calendar {
+    grid-area: zona2;
+}
+.tabel {
+    grid-area: zona1;
+    background: white;
+}
+tr{
+    background-color: crimson;
+}
+tr:nth-child(odd){
+    background:wheat;
+}
+tr:hover{
+    background: white;
+}
+.anunturi {
+    grid-area: zona3;
+}
+.wra{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.box2 img, .box3 img{
+    width: 500px;
+    height: auto;
+}

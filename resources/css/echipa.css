@@ -1,0 +1,58 @@
+main{
+    --padd-main:1rem;
+    padding-left:var(--padd-main);
+    padding-right:var(--padd-main);
+}
+
+.grid-jucatori{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+}
+.grid-jucatori .jucator{
+    border-radius: 2rem;
+    box-shadow: 0px 0px 0.8rem 0.3rem grey;
+    overflow: hidden;
+}
+
+.grid-jucatori .jucator h3{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.grid-jucatori .jucator h3 a{
+    color:black;
+    text-decoration: none;
+}
+.grid-jucatori .jucator h3 a:hover{
+    color:var(--c1);
+}
+.grid-jucatori .jucator figure{
+    text-align: center;
+}
+.grid-jucatori .jucator figure img{
+    border:1px solid grey
+}
+.grid-jucatori .jucator .info-jucator{
+    display:flex;
+    background-color: var(--c1);
+}
+.grid-jucatori .jucator .info-jucator p{
+    width:30%;
+    text-align:center;
+    font-weight:bold;
+}
+
+/*.grid-jucatori .jucator p.categorie{
+
+    text-align:center;
+    font-weight:bold;
+}*/
+
+.info-jucator{
+    background-color: var(--c1);
+    padding:0.2rem;
+    box-shadow: 0px 0px 0.5rem 0.15rem grey;
+}
